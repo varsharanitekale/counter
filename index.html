@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <style>
+        body {
+            text-align: center;
+            background-color:azure;
+            margin:0px;
+        }
+        
+        button {
+            width: 130px;
+            height: 40px;
+            border-radius: 10%;
+            box-shadow: 0px 0px 5px blue;
+            background-color:gray;
+            font-size: large;
+            margin-top: 40px;
+            color:white;
+        }
+        
+        h1,
+        h3 {
+            font-family: 'italic';
+            color:white;
+        }
+        div{
+            background-color: brown;
+            width:50%;
+            height:40%;
+            align-items: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 200px 0px 0px 300px;
+
+
+        }
+        #main{
+            color:white;
+        }
+    </style>
+
+
+
+
+    <script>
+        var count = 0;
+
+        function myFunc() {
+                     count++;
+                     
+                        document.getElementById("main").innerHTML = count ;
+
+                     
+                     
+                        
+
+        }
+
+        function myFunc1() {
+
+            count--;
+            
+                document.getElementById("main").innerHTML = count ;
+ 
+                
+                
+            
+            
+
+                      
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+<div>
+
+<h1>Counter APP</h1>
+    <button onclick="myFunc()">Counter up </button>
+    <button onclick="myFunc1()">counter down</button>
+    <h3 id="main"></h3>
+</div>
+    
+</body>
